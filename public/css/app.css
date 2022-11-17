@@ -1,0 +1,26 @@
+.home{
+    color:black;
+}
+.lock {
+    padding: 0;
+    border: none;
+    background: none;
+ }
+.icon-circle-blank, .icon-ok-circle{
+    font-size: 30px;
+    color:rgb(113, 113, 113);
+}
+.lock:hover .icon-circle-blank,
+.lock .icon-ok-circle {
+    display: none;
+}
+.lock:hover .icon-ok-circle {
+    display: inline;
+}
+.lock:active .icon-circle-blank,
+.lock .icon-ok-circle {
+    display: none;
+}
+.lock:hover .icon-ok-circle {
+    display: inline;
+}

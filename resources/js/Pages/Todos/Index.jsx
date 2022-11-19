@@ -20,7 +20,7 @@ export default function TodoIndex({ todos, session }) {
     <Layout>
         <div style={{ marginTop: '100px' }}>
             
-            <Link href="/todos/create" className="btn btn-success btn-md mb-3">TAMBAH TODO</Link>
+            <Link href="/todos/create" className="btn btn-primary btn-md mb-3">TAMBAH TODO</Link>
             
             {session.success && (
                 <div className="alert alert-success border-0 shadow-sm rounded-3">
@@ -34,7 +34,7 @@ export default function TodoIndex({ todos, session }) {
                         <tbody>
                         { todos.map((todo, index) => (
                             <tr key={ index }>
-                                <td className="text-center align-middle">
+                                <td className="text-center align-middle col-md-1">
                                 <button onClick={() => deleteTodo(todo.id)} className="lock">
                                 <i className="icon-circle-blank"></i>
                                 <i className="icon-ok-circle"></i>

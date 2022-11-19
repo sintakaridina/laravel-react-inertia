@@ -4,6 +4,9 @@ import React, { useState } from 'react';
 //import layout
 import Layout from '../../Layouts/Default';
 
+//import Link
+import { Link } from '@inertiajs/inertia-react';
+
 //import inertia adapter
 import { Inertia } from '@inertiajs/inertia';
 
@@ -56,7 +59,7 @@ export default function CreateTodo({ errors }) {
 
                                 <div>
                                     <button type="submit" className="btn btn-md btn-success me-2"><i className="fa fa-save"></i> SAVE</button>
-                                    <button type="reset" className="btn btn-md btn-warning"><i className="fa fa-redo"></i> RESET</button>
+                                    <Link href="/" className="btn btn-md btn-danger"><i className="fa fa-redo"></i> CANCEL</Link>
                                 </div>
                             </form>
                         </div>
